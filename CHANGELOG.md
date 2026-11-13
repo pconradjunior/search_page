@@ -1,3 +1,9 @@
+## [2.4.0] - November 13th, 2026
+
+- Update package to use material_ui package instead of flutter/material.dart.
+- Uses Flutter 3.47.8 
+- Update package dependencies to use latest versions of packages.
+
 ## [2.3.0] - February 2nd, 2023
 
 - Update default search page style to match Material 3.

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:search_page/search_page.dart';
 
 const List<String> _mockList = ['a', 'b', 'c', 'dd', 'ee', 'ff'];

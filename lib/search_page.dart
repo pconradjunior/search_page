@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 typedef SearchFilter<T> = List<String?> Function(T t);
 typedef ResultBuilder<T> = Widget Function(T t);
@@ -69,11 +69,11 @@ class SearchPage<T> extends SearchDelegate<T?> {
   final SortCallback<T>? sort;
 
   SearchPage({
-    this.suggestion = const SizedBox(),
-    this.failure = const SizedBox(),
     required this.builder,
     required this.filter,
     required this.items,
+    this.suggestion = const SizedBox(),
+    this.failure = const SizedBox(),
     this.showItemsOnEmpty = false,
     this.searchLabel,
     this.barTheme,
@@ -115,7 +115,7 @@ class SearchPage<T> extends SearchDelegate<T?> {
           icon: const Icon(Icons.clear),
           onPressed: () => query = '',
         ),
-      )
+      ),
     ];
   }
 
